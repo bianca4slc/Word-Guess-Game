@@ -1,0 +1,25 @@
+body {
+    background-image: url(../images/farm.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1 {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 100px;
+    color: red;
+    font: outline;
+    line-height: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 75px;
+    line-height: 20px;
+}
+
+p {
+    text-align: center;
+    te
+}
