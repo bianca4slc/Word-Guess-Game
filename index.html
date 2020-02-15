@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +11,30 @@
     <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Luckiest+Guy&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <div class="container">
-        <h1>Word Guess</h1> 
+    <header>
+        <h1>Word Guess</h1>
         <h2>Animal Style</h2>
+    </header>
 
-        <div class="row">
-            <div class="col-3">
-                <h3>Wins:</h3>
-                <div id="wins">
-                    <div class="col-6">
-                        <h3>Guesses Remaining:</h3>
-                        <div id="remaining">
-                        </div>
-                    </div>
-                </div> 
-            </div>
+    <div class="row">
+        <div class="col-3">
+            <p id="wins">Wins:</p>
         </div>
-        <h3>Letters Already Guessed</h3>
-        <div id="guessed"></div>
-
+        <div class="col-3">
+            <p></p>
+        </div>
+        <div class="col-6">
+            <p id="remaining">Guesses Remaining:</p>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <p id="guessed">Letters Already Guessed</p>
+        </div>
+    </div>
+
 </body>
+
 </html>

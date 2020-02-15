@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
 h1 {
     text-align: center;
     font-family: 'Luckiest Guy', cursive;
@@ -19,6 +20,19 @@ h2 {
     line-height: 20px;
 }
 
-h3 {
+p {
     font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+}
+
+#wins {
+text-align: left; 
+}
+
+#remaining {
+text-align: right;
+}
+
+#guessed {
+    text-align: center;
 }
