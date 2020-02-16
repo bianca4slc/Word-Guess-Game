@@ -10,14 +10,13 @@ h1 {
     font-size: 100px;
     color: red;
     font: outline;
-    line-height: 20px;
 }
 
 h2 {
     text-align: center;
     font-family: 'Fontdiner Swanky', cursive;
     font-size: 75px;
-    line-height: 20px;
+    margin-bottom: 30px;
 }
 
 p {
@@ -25,14 +24,14 @@ p {
     font-size: 35px;
 }
 
-#wins {
+/* #wins {
 text-align: left; 
-}
+} 
 
 #remaining {
-text-align: right;
-}
+text-align: center;
+} 
 
 #guessed {
-    text-align: center;
-}
+text-align: center;
+} */
