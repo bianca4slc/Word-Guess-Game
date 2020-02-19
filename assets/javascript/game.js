@@ -11,6 +11,17 @@ var wins = 0;
 //var for incorrect guesses
 var incorrecGuesses = 8;
 
+var answerArray = [];
+
+// letters remaining in word to be guessed
+var remainingLetters = animals.length;
+
+// var for when a letter is guessed
+var letterGuess = event.key;
+
+
+
+
 //test to see if the var is working
 console.log(Math.floor(Math.random() * theAnimals.length))
 
@@ -20,13 +31,11 @@ function startGame() {
     displaySpaces()
 }
 
-var answerArray = [];
 function generateSpaces(){
     for (var i = 0; i < animals.length; i++) {
         answerArray[i] = "_";
     }
 }
-
 
 function displaySpaces() {
     var answerArrayString = answerArray.join() 
@@ -36,23 +45,21 @@ function displaySpaces() {
 
 // starts game 
 document.getElementById("start").addEventListener("click", startGame)
-var remainingLetters = animals.length;
-
-var letterGuess
 
 document.onkeyup = function(event) {
-    var letterGuess = event.key;
-}
-//!!! not working!!! fill blank spaces with correct letters- do I need a function?
-// function showCorrectLetters() {
+
     for (var j = 0; j< animals.length; j++) {
         if (animals[j] === letterGuess) {
-            answerArray[j] = guess;
+            // answerArray[j] = letterGuess;
             remainingLetters--;
             console.log(letterGuess)
         }
+        else {
+            incorrecGuesses--;
+            
+        }
     }
-}
+};
 
 
 //display letters already guessed
@@ -62,6 +69,4 @@ document.onkeyup = function(event) {
 //win/lose screen
 
 //toLowerCase
-
-//show image and play sound for correct word
 
