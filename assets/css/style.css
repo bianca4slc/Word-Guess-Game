@@ -28,11 +28,10 @@ p {
 /* #wins {
 text-align: left; 
 } 
-
 #remaining {
 text-align: center;
 }  */
 
-#guessed {
-text-align: center;
+.guessed {
+    text-align: center;
 }
